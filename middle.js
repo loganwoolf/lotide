@@ -1,16 +1,3 @@
-const eqArrays = (firstArr, secondArr) => {
-  if (firstArr.length !== secondArr.length) return false;
-  for (let i in firstArr) {
-    if (firstArr[i] !== secondArr[i]) return false;
-  }
-  return true;
-};
-
-const assertArraysEqual = function(firstArr, secondArr) {
-  eqArrays(firstArr, secondArr)
-    ? console.log(`👌 Assertion Passed 👌: ${firstArr} === ${secondArr}`)
-    : console.log(`💥 Assertion Failed 💥: ${firstArr} !== ${secondArr}`);
-};
 
 // return [] for 2 or fewer items
 
@@ -32,14 +19,8 @@ const middle = (arr) => {
     const value = arr.slice(position - 1, position + 1);
     outputArr = value;
   }
+
   return outputArr;
 };
 
-assertArraysEqual(
-  middle([1,2,3,4,5,6]),
-  [3,4]
-);
-assertArraysEqual(
-  middle([1,2,3,4,5,6,7]),
-  [4]
-);
+module.exports = middle;
