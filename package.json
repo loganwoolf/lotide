@@ -1,0 +1,26 @@
+{
+  "name": "lotide",
+  "version": "0.0.1",
+  "description": "Development Library for Javascript",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loganwoolf/lotide.git"
+  },
+  "author": "Logan Woolf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loganwoolf/lotide/issues"
+  },
+  "homepage": "https://github.com/loganwoolf/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.4"
+  }
+}
