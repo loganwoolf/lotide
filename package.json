@@ -2,7 +2,7 @@
   "name": "lotide",
   "version": "0.0.1",
   "description": "Development Library for Javascript",
-  "main": "main.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },

@@ -1,8 +1,9 @@
-const assertEqual = function(actual, expected) {
+
+/* const assertEqual = function(actual, expected) {
   actual === expected
     ? console.log(`👌 Assertion Passed 👌: ${actual} === ${expected}`)
     : console.log(`💥 Assertion Failed 💥: ${actual} !== ${expected}`);
-};
+}; */
 
 // take in a sentence as a string
 
@@ -22,9 +23,11 @@ const countLetters = function(str) {
   return outputObj;
 };
 
+module.exports = countLetters;
+/*
 assertEqual(countLetters("Hello sir")['h'], 1);
 assertEqual(countLetters("Hello")['l'], 2);
 assertEqual(countLetters("Misinterpreted")['i'], 2);
 console.log(
   countLetters("good evenIng")
-);
+); */

@@ -1,4 +1,5 @@
-const assertEqual = function(actual, expected) {
+const eqArrays = require('./eqArrays');
+/* const assertEqual = function(actual, expected) {
   actual === expected
     ? console.log(`👌 Assertion Passed 👌: ${actual} === ${expected}`)
     : console.log(`💥 Assertion Failed 💥: ${actual} !== ${expected}`);
@@ -9,7 +10,7 @@ const eqArrays = (firstArr, secondArr) => {
     if (firstArr[i] !== secondArr[i]) return false;
   }
   return true;
-};
+}; */
 
 // takes in two objects and returns whether they are congruent
 const eqObjects = function(mainObj, diffObj) {
@@ -31,6 +32,9 @@ const eqObjects = function(mainObj, diffObj) {
   return true;
 };
 
+module.exports = eqObjects;
+
+/* Test Code
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
 assertEqual(
@@ -42,7 +46,7 @@ assertEqual(
   eqObjects(cd, cd2),
   false
 );
-
+ */
 
 
 /* Strings as values tests

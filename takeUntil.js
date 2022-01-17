@@ -1,4 +1,5 @@
-const eqArrays = (firstArr, secondArr) => {
+
+/* const eqArrays = (firstArr, secondArr) => {
   if (firstArr.length !== secondArr.length) return false;
   for (let i in firstArr) {
     if (firstArr[i] !== secondArr[i]) return false;
@@ -10,16 +11,11 @@ const assertArraysEqual = function(firstArr, secondArr) {
   eqArrays(firstArr, secondArr)
     ? console.log(`👌 Assertion Passed 👌: ${firstArr} === ${secondArr}`)
     : console.log(`💥 Assertion Failed 💥: ${firstArr} !== ${secondArr}`);
-};
+}; */
 
 // take until
 // returns an array from the beginning until a
 // callback returns a truthy value.
-
-// return items until x < 7 is encountered
-
-//args
-// array, callback (the item in the array only)
 
 const takeUntil = function(array, callback) {
   const outputArr = [];
@@ -30,7 +26,9 @@ const takeUntil = function(array, callback) {
   return outputArr;
 };
 
-const firstData = [1, 2, 5, 7, 2, -1, 2, 4, 5];
+module.exports = takeUntil;
+
+/* const firstData = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 // take until negative is encountered
 const firstResults = takeUntil(firstData, x => x < 0);
 assertArraysEqual(firstResults, [1,2,5,7,2]);
@@ -61,3 +59,4 @@ const fourthData = [1, 2, 5, 7, 2, 11, 2, 4, 5];
 // take until negative is encountered
 const fourthResults = takeUntil(fourthData, x => x < 0);
 assertArraysEqual(fourthResults, [1,2,5,7,2,11,2,4,5]);
+ */

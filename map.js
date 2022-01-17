@@ -1,5 +1,5 @@
-// 2 args >> an array to map over, a callback function
-const eqArrays = (firstArr, secondArr) => {
+
+/* const eqArrays = (firstArr, secondArr) => {
   if (firstArr.length !== secondArr.length) return false;
   for (let i in firstArr) {
     if (firstArr[i] !== secondArr[i]) return false;
@@ -9,9 +9,9 @@ const eqArrays = (firstArr, secondArr) => {
 
 const assertArraysEqual = function(firstArr, secondArr) {
   eqArrays(firstArr, secondArr)
-    ? console.log(`👌 Assertion Passed 👌: ${firstArr} === ${secondArr}`)
-    : console.log(`💥 Assertion Failed 💥: ${firstArr} !== ${secondArr}`);
-};
+  ? console.log(`👌 Assertion Passed 👌: ${firstArr} === ${secondArr}`)
+  : console.log(`💥 Assertion Failed 💥: ${firstArr} !== ${secondArr}`);
+}; */
 
 const map = function(inputArray, callbackFn) {
   const results = [];
@@ -22,6 +22,9 @@ const map = function(inputArray, callbackFn) {
   return results;
 };
 
+module.exports = map;
+
+/* // Test Code
 const words = ["ground", "control", "to", "major", "tom"];
 const nums = [1,2,3,4,5];
 
@@ -33,4 +36,4 @@ const secondResults = map(nums, num => num * 10);
 assertArraysEqual(secondResults, [10,20,30,40,50]);
 
 const thirdResults = map(nums, num => num + 1);
-assertArraysEqual(thirdResults, [2,3,4,5,6]);
+assertArraysEqual(thirdResults, [2,3,4,5,6]); */

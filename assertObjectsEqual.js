@@ -1,4 +1,5 @@
-const eqArrays = (firstArr, secondArr) => {
+const eqObjects = require('./eqObjects');
+/* const eqArrays = (firstArr, secondArr) => {
   if (firstArr.length !== secondArr.length) return false;
   for (let i in firstArr) {
     if (firstArr[i] !== secondArr[i]) return false;
@@ -23,7 +24,7 @@ const eqObjects = function(mainObj, diffObj) {
     }
   }
   return true;
-};
+}; */
 
 const assertObjectsEqual = function(mainObj, diffObj) {
   const inspect = require('util').inspect;
@@ -32,7 +33,8 @@ const assertObjectsEqual = function(mainObj, diffObj) {
     : console.log(`💥 Assertion Failed 💥: ${inspect(mainObj)} !== ${inspect(diffObj)}`);
 };
 
+module.exports = assertObjectsEqual;
 
-const cd = { c: "1", d: ["2", 3] };
+/* const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
-assertObjectsEqual(cd, dc);
+assertObjectsEqual(cd, dc); */
