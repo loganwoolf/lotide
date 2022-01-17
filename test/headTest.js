@@ -1,11 +1,38 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const head = require('../head');
 
-console.log("--Should Pass--");
-assertEqual(head(['Logan','Frank','Jim']), 'Logan');
-assertEqual(head([5,7,9]), 5);
-assertEqual(head([]), undefined);
+describe("Tests for head()", () => {
 
-console.log('\n--Should Fail--');
-assertEqual(head(['Logan','Frank','Jim']), 'Frank');
-assertEqual(head([5,7,9]), 9);
+  it('returns 1 for [1, 2, 3]'
+    , () => {
+      assert.strictEqual(
+        head([1,2,3])
+        , 1
+      );
+    });
+
+  it('returns "5" for ["5"]'
+    , () => {
+      assert.strictEqual(
+        head(["5"])
+        , "5"
+      );
+    });
+
+  it('returns "Logan" for ["Logan", "Miroslav", "Reggie"]'
+    , () => {
+      assert.strictEqual(
+        head(["Logan", "Miroslav", "Reggie"])
+        , "Logan"
+      );
+    });
+
+  it('returns undefined for []'
+    , () => {
+      assert.strictEqual(
+        head([])
+        , undefined
+      );
+    });
+
+});
