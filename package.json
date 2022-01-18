@@ -1,6 +1,6 @@
 {
   "name": "lotide",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Development Library for Javascript",
   "main": "index.js",
   "directories": {
