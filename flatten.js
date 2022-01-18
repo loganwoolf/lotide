@@ -1,18 +1,4 @@
 
-/* const eqArrays = (firstArr, secondArr) => {
-  if (firstArr.length !== secondArr.length) return false;
-  for (let i in firstArr) {
-    if (firstArr[i] !== secondArr[i]) return false;
-  }
-  return true;
-};
-
-const assertArraysEqual = function(firstArr, secondArr) {
-  eqArrays(firstArr, secondArr)
-    ? console.log(`👌 Assertion Passed 👌: ${firstArr} === ${secondArr}`)
-    : console.log(`💥 Assertion Failed 💥: ${firstArr} !== ${secondArr}`);
-}; */
-
 const flatten = (arr) => {
   const outputArr = [];
   for (let item of arr) {
@@ -28,8 +14,3 @@ const flatten = (arr) => {
 };
 
 module.exports = flatten;
-
-/* //Test Code
-console.log(flatten(
-  [1,2,[3,4],5]
-)); */
