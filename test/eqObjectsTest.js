@@ -46,4 +46,28 @@ describe("Tests for eqObjects()", () => {
 
     });
 
+  it("returns true for objects containing congruent nested objects"
+    , () => {
+      assert.deepEqual(
+        eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })
+      );
+    });
+
+  it("returns false for objects containing inconcgruent nested objects"
+    , () => {
+      assert.notDeepEqual(
+        eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })
+      );
+    });
+
+  it("returns false for objects containing inconcgruent nested objects"
+    , () => {
+      assert.notDeepEqual(
+        eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 })
+      );
+    });
+
+  
+
+
 });
